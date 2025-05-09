@@ -12,7 +12,9 @@
 		<link rel="stylesheet" href="../static/assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-
+		<div id="headerToggle">
+			<a href="#header" class="toggle"></a>
+		</div>
 		<!-- Header -->
 			<div id="header">
 
@@ -381,6 +383,18 @@
 				// Initialize
 				showSlide(currentSlide);
 		  	</script>
+			<script>
+				(function() {
+					const body = document.body;
+					const toggle = document.querySelector('#headerToggle .toggle');
 
+					if (toggle) {
+						toggle.addEventListener('click', function(e) {
+							e.preventDefault();
+							body.classList.toggle('header-visible');
+						});
+					}
+				})();
+			</script>
 	</body>
 </html>
