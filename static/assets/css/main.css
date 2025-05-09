@@ -2248,7 +2248,7 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/water_tank_setup.jpg");
 			}
 
 			#main > section.two {
@@ -2630,4 +2630,211 @@ input, select, textarea {
 					margin-top: 0;
 				}
 
-	}
+	        }
+
+        /* Header Card */
+
+            .hero-card {
+                background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+                padding: 1em;
+                border-radius: 1em;
+                max-width: 50%;
+                margin: 0 auto;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            }
+
+	        .hero-card h2,
+            .hero-card p {
+                color: #000 !important; /* Switch to black text for contrast on light background */
+                text-align: center;
+                margin: 0;
+            }
+
+        /* slideshow */
+
+            .slideshow {
+              text-align: center;
+              padding: 2em;
+              background: rgba(255, 255, 255, 0.95);
+              border-radius: 0.5em;
+              box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.05);
+              margin-left: auto;
+              margin-right: auto;
+              display: block;
+            }
+
+            .slideshow .slide {
+              display: none;
+            }
+
+            .slideshow .slide img {
+              width: 100%;
+              height: 700px;
+              object-fit: cover;
+              border-radius: 0.35em;
+              cursor: pointer;
+            }
+
+            .slideshow .description {
+              font-size: 1em;
+              color: #666;
+              margin-top: 1em;
+            }
+
+            .nav-buttons {
+              margin-top: 1.5em;
+            }
+
+            .nav-buttons .button {
+              margin: 0 0.5em;
+            }
+
+            .image-wrapper {
+              position: relative;
+              display: inline-block;
+              width: 100%;
+            }
+
+            .image-overlay {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0,0,0,0.8);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              z-index: 1000;
+            }
+
+            .image-popup {
+              position: relative;
+              max-width: 90%;
+              max-height: 90%;
+              overflow: auto;
+              background: #fff;
+              border-radius: 0.5em;
+              padding: 1em;
+            }
+
+            .image-popup img {
+              max-width: 90vw;
+              max-height: 90vh;
+              border-radius: 0.5em;
+              object-fit: contain;
+            }
+
+            .close-button {
+              position: fixed;
+              top: 20px;
+              right: 20px;
+              font-size: 2em;
+              color: white;
+              cursor: pointer;
+              z-index: 1001;
+            }
+
+            .arrow {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 2.5em;
+              color: #fff;
+              background: rgba(0, 0, 0, 0.4);
+              padding: 0.2em 0.5em;
+              border-radius: 0.2em;
+              text-decoration: none;
+              cursor: pointer;
+              z-index: 2;
+            }
+
+            .arrow.left {
+              left: 0.5em;
+            }
+
+            .arrow.right {
+              right: 0.5em;
+            }
+
+            .arrow:hover {
+              background: rgba(0, 0, 0, 0.6);
+            }
+
+        /* thumbnail */
+
+            .thumbnail-carousel {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.5em;
+              margin-top: 2em;
+            }
+
+            .thumb-nav {
+              font-size: 1em;
+              background: none;
+              border: none;
+              cursor: pointer;
+              color: #444;
+            }
+
+            .thumbnails-wrapper {
+              overflow: hidden;
+              width: 600px; /* shows about 4–5 thumbnails depending on size */
+            }
+
+            .thumbnails {
+              display: flex;
+              gap: 0.5em;
+              transition: transform 0.3s ease;
+            }
+
+            .thumbnails img {
+              width: 80px;
+              height: auto;
+              border-radius: 5px;
+              opacity: 0.6;
+              cursor: pointer;
+              transition: opacity 0.2s ease;
+            }
+
+            .thumbnails img.active,
+            .thumbnails img:hover {
+              opacity: 1;
+            }
+
+        /* gallery full image arrows */
+
+            .modal-arrow {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 2.5em;
+              color: #fff;
+              background: rgba(0,0,0,0.5);
+              padding: 0.3em 0.5em;
+              cursor: pointer;
+              user-select: none;
+              z-index: 1002;
+              border-radius: 0.2em;
+            }
+
+            .modal-arrow.left {
+              left: 10px;
+            }
+
+            .modal-arrow.right {
+              right: 10px;
+            }
+
+            .modal-arrow:hover {
+              background: rgba(0,0,0,0.7);
+            }
+
+
+        /* gallery background */
+
+            section#portfolio {
+              background-color: #f5fafa;
+            }
