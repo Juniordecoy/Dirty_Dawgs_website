@@ -12,7 +12,9 @@
 		<link rel="stylesheet" href="../static/assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-
+		<div id="headerToggle">
+			<a href="#header" class="toggle"></a>
+		</div>
 		<!-- Header -->
 			<div id="header">
 
@@ -100,6 +102,18 @@
 			<script src="../static/assets/js/breakpoints.min.js"></script>
 			<script src="../static/assets/js/util.js"></script>
 			<script src="../static/assets/js/main.js"></script>
+			<script>
+				(function() {
+					const body = document.body;
+					const toggle = document.querySelector('#headerToggle .toggle');
 
+					if (toggle) {
+						toggle.addEventListener('click', function(e) {
+							e.preventDefault();
+							body.classList.toggle('header-visible');
+						});
+					}
+				})();
+			</script>
 	</body>
 </html>
