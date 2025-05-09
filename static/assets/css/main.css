@@ -2769,6 +2769,7 @@ input, select, textarea {
               justify-content: center;
               gap: 0.5em;
               margin-top: 2em;
+              margin-left: 375px;
             }
 
             .thumb-nav {
@@ -2838,3 +2839,12 @@ input, select, textarea {
             section#portfolio {
               background-color: #f5fafa;
             }
+
+        /* other */
+
+            .gallery-container {
+              margin-left: 375px;
+            }
+
+
+
