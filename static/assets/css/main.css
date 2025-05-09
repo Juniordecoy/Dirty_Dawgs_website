@@ -2843,7 +2843,13 @@ input, select, textarea {
         /* other */
 
             .gallery-container {
-              margin-left: 375px;
+              margin-left: 0;
+            }
+
+            @media screen and (min-width: 961px) {
+              .gallery-container {
+                margin-left: 375px; /* Only apply shift when sidebar is visible */
+              }
             }
 
 
