@@ -2852,5 +2852,22 @@ input, select, textarea {
               }
             }
 
+            @media screen and (max-width: 960px) {
+              .thumbnail-carousel {
+                margin-left: 0 !important;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                padding: 0 1em;
+              }
+
+              .thumbnails-wrapper {
+                width: 100%;
+              }
+
+              .thumbnails img {
+                width: 60px;
+              }
+            }
+
 
 
